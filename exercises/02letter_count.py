@@ -31,3 +31,10 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 3}
+
+
+def letter_count(string):
+    return {c: string.upper().count(c) for c in string.upper()}
+
+
+print(letter_count('ABCABCabc'))

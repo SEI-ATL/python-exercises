@@ -9,3 +9,24 @@
 #
 # > 120
 #
+
+
+def factorial(n):
+
+    # recursive
+    return 1 if (n == 1 or n == 0) else n * factorial(n - 1)
+
+
+print(factorial(5))
+
+
+def factorial2(n):
+
+    fact = 1
+
+    for i in range(1, n+1):
+        fact = fact * i
+    return fact
+
+
+print(factorial2(5))
