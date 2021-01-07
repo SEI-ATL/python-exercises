@@ -10,3 +10,9 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+
+def multiply_by(num_list, num):
+    m = []
+    for each in num_list:
+        m.append(each*num)
+    return m
