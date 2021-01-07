@@ -10,3 +10,27 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+
+#mutate original
+def multiply_by_mutate(numArr, n):
+    for i in range(len(numArr)):
+        numArr[i] = numArr[i] * n
+    return numArr
+
+
+numbers = [1,2,-3,4.5]
+print(multiply_by_mutate(numbers, 2))
+print(numbers)
+
+
+#dont mutate 
+def multiply_by(numArr, n):
+    multArr =[]
+    for i in range(len(numArr)):
+        multArr.append(numArr[i] * n)
+    return multArr
+
+
+numbers2 = [1,2,-3,4.5]
+print(multiply_by(numbers2, 2))
+print(numbers2)
