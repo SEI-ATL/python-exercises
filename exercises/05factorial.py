@@ -10,6 +10,8 @@
 # > 120
 #
 
+from functools import reduce
+
 def factorial(n):
     sum = 1
     while n > 1 :
@@ -18,3 +20,8 @@ def factorial(n):
     return sum
 
 print(factorial(5))
+
+def factorial_reduce(n):
+    return reduce(lambda x,y: x*y, list(range(1, n+1)))
+
+print(factorial_reduce(5))
