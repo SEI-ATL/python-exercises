@@ -6,7 +6,23 @@
 #
 # for letter in "alpha":
 #   print(letter)
-#
+
+def letter_count(string):
+    # list = (string.splice())
+    # print(list)
+    list = [char for char in string]
+    print(list)
+    for l in string:
+        list.count(string)
+        if l in string:
+            count = string.count(l)
+            print(l + ' Occurs ' + str(count) + ' time(s)')
+        
+
+letter_count("alpha")
+
+
+
 # Create a dictionary with `dd = {}`. Assign values with `dd["foo"] = 1`.
 # Check to see if a dictionary has a key using the `in` operator.
 #
@@ -31,3 +47,9 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 3}
+
+
+dd = {}
+dd["foo"] = 1
+
+print("foo" in dd)
