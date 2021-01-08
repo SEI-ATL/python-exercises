@@ -9,3 +9,12 @@
 #
 # > 120
 #
+
+def factorial(n):
+    product = 1
+    for i in range(n):
+        i += 1
+        product *= i
+    return product
+
+print(factorial(10))
