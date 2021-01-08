@@ -9,3 +9,12 @@
 #
 # > 120
 #
+
+def factorial(n):
+    factor = 1
+    for i in range(1,int(n+1)):
+        factor = factor * int(i)
+    print(factor)
+
+factorial(6)
+
