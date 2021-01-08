@@ -10,3 +10,12 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+
+def multiply_by(numbers, multiplier):
+    new_numbers = []
+    for i in numbers:
+        new_numbers.append(i * multiplier)
+
+    return new_numbers
+
+print(multiply_by([2,4,6,8], 2))

@@ -13,3 +13,9 @@
 # > Hello there
 # > Hello there
 # > Hello there
+
+def p_times(str, loops):
+    for i in range(loops):
+        print(str)
+
+p_times("Hello there!", 4)
