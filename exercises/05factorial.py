@@ -2,7 +2,7 @@
 # Given a whole number n, a factorial is the product of all
 # whole numbers from 1 to n.
 # 5! = 5 * 4 * 3 * 2 * 1
-#
+def factorial(input):
 # Example method call
 #
 # factorial(5)
