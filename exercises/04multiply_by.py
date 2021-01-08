@@ -11,8 +11,24 @@
 #
 # > [5, 10, 15]
 
+
+# with lambda
 def multiply_by(arr, num):
     return list(map(lambda x: x*num, arr))
 
 
 print(multiply_by([1, 2, 3], 2))
+
+
+# without lambda, map maps over the two parameters at each index
+# #> brings them into the function that does the mapping,
+# and you can return it to get the result
+def multiply(a, b):
+    return a*b
+
+
+def multiply_by2(arr, num):
+    return list(map(multiply, arr, [num]*len(arr)))
+
+
+print(multiply_by2([1, 2, 3], 5))

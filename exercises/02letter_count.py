@@ -34,7 +34,7 @@
 
 
 def letter_count(string):
-    return {c: string.upper().count(c) for c in string.upper()}
+    return {c: string.upper().count(c) for c in string.upper().replace(" ", '')}
 
 
-print(letter_count('ABCABCabc'))
+print(letter_count('ABCABCabc   HELLO'))
