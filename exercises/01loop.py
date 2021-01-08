@@ -3,11 +3,19 @@
 # to the console.
 
 def p_times(statement, num):
-    str(statement)
-    add_space = statement + ' '
-    return add_space * num
-    
-print(p_times('here I am', 5))
+    number = int(num)
+    sentence = str(statement)
+    add_space = sentence + ' '
+    return add_space * number
+
+# print(p_times('here I am', 5))
+# print(p_times('its gonna rain', 11))
+phrase = input('Enter a phrase: ')
+number = input('Enter the number of repetitions: ')
+strnum = str(number)
+
+print(p_times(phrase, strnum))
+
 
 # Example method call:
 #

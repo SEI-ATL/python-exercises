@@ -1,6 +1,6 @@
 # Write a method called `letter_count` to count the letter
 # occurrence in a string. Use a dictionary.
-#
+
 # You can iterate over a string one letter at a time using
 # a for loop.
 #
