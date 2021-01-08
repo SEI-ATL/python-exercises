@@ -12,7 +12,7 @@
 # > [5, 10, 15]
 
 def multiply_by(numbers, num):
-    for i in range(len(numbers)):
+    for i in numbers:
         numbers[i] *= num
     return numbers
 

@@ -22,7 +22,7 @@ contacts = {
 }
 
 def print_contacts(contacts):
-  for key in contacts:
-    print(f'{key} has a phone number of {contacts[key]}')
+  for person in contacts:
+    print(f'{person} has a phone number of {contacts[person]}')
 
 print_contacts(contacts)

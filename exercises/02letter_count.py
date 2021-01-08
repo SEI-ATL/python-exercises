@@ -34,7 +34,7 @@
 
 def letter_count(string):
     letters = {}
-    for i in range(len(string)):
+    for i in string:
         letter = string[i]
         if letter in letters:
             letters[letter] += 1
