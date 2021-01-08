@@ -13,8 +13,8 @@
 
 def multiply_by(numbers, multiplier):
     multiples = []
-    for number in range(len(numbers)):
-        multiples.append(numbers[number] * multiplier)
+    for number in numbers:
+        multiples.append(number * multiplier)
     print(multiples)
 
 multiply_by([1, 2, 3], 5)
