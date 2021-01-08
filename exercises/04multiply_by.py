@@ -34,3 +34,12 @@ def multiply_by(numArr, n):
 numbers2 = [1,2,-3,4.5]
 print(multiply_by(numbers2, 2))
 print(numbers2)
+
+#or with map 
+def multiply_by_map(numArr, n):
+    map(lambda x : x*n, numArr)
+    return numArr
+
+numbers3 = [1,2,-3,4.5]
+print(multiply_by_map(numbers3, 2))
+print(numbers3)
