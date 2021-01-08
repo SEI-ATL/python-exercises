@@ -23,6 +23,6 @@ people = {
 
 def print_contacts(contacts):
     for contact in contacts:
-        print('{} has a phone number of {}'.format(contact, contacts[contact]))
+        print(f'{contact} has a phone number of {contacts[contact]}')
 
 print_contacts(people)
