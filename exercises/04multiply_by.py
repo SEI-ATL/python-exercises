@@ -10,3 +10,14 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+
+
+def multiply_by(x, y):
+    result = []
+    for i in x:
+        answer = i * y
+        result.append(answer)
+       # print(answer)
+    print(result)
+
+multiply_by([1, 2, 3], 5)
