@@ -2,7 +2,7 @@ import datetime
 
 class RealMadrid:
     """A player for the greatest club in the world. Hala Madrid Y Nada Mas"""
-    def start(self, full_name, birthday):
+    def __init__(self, full_name, birthday):
         self.name = full_name
         self.birthday = birthday 
         
