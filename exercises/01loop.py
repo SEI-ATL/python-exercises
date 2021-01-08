@@ -13,3 +13,15 @@
 # > Hello there
 # > Hello there
 # > Hello there
+def p_times(statemnent, num):
+    statemnent = statemnent * '\n'
+    print(statemnent * num)
+
+def p_times(statement, num):
+    i = 0 
+    while i < num: 
+        print(statetment)
+        equal = True
+
+p_times('Today is Friday', 1)
+p_times('Tomorrow is Sat', 2)
