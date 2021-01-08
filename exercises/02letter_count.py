@@ -31,3 +31,16 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 3}
+
+def letter_count(string):
+    dictionary = {}
+    for letter in string:
+        if letter == " " : 
+            continue
+        if letter in dictionary: 
+            dictionary[letter] += 1
+        else: 
+            dictionary[letter] = 1
+    print(dictionary)
+
+letter_count('apple')

@@ -13,3 +13,7 @@
 # > Hello there
 # > Hello there
 # > Hello there
+
+def p_times(statement, num):
+    print(statement * num)
+p_times('Hello there', 3)
