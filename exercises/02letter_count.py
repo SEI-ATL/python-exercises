@@ -32,13 +32,27 @@
 #
 # > {'a': 3, 'b': 1, 'n': 3}
 
-def letter_count(string):
-    dd = {}
-    for letter in string:
-        if letter not in dd:
-            dd[letter] = 0
-    for letter in string:
-        dd[letter] += 1
-    return dd
+# def letter_count(string):
+#     dd = {}
+#     for letter in string:
+#         if letter not in dd:
+#             dd[letter] = 0
+#     for letter in string:
+#         dd[letter] += 1
+#     return dd
 
-print(letter_count('Bakayaro'))
+# print(letter_count('Bakayaro'))
+
+def letter_count1(string):
+    dd = {}
+
+    for letter in string: # letter is a variable that when printed allows you to see each letter in the string individually
+        if letter in dd:
+            dd[letter] += 1
+        else:
+            dd[letter] = 1
+
+    print(dd)
+
+
+letter_count1('what')

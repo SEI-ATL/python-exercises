@@ -18,3 +18,12 @@ def multiply_by(array, num ):
     return multiple
 
 print(multiply_by([1, 2, 3], 5))
+
+def multiply_by1(numbers_list, multiple):
+    result = []
+    for each_num in numbers_list:
+        result.append(each_num * multiple)
+
+    return result
+
+print(multiply_by1([5, 6, 7, 3], 10))

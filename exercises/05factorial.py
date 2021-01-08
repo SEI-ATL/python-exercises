@@ -18,3 +18,15 @@ def factorial(num):
     return sum
 
 print(factorial(5))
+
+def factorial1(n):
+    if n < 1:
+        raise ValueError('Number needs to be a positive number')
+    result = 1
+
+    for i in range(result, (n + 1)):
+        result = result * i
+
+    return result
+
+print(factorial1(4))

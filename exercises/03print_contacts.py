@@ -25,3 +25,9 @@ def print_contacts(dict):
     print('{} has a phone number of {}'.format(person, dict[person]))
 
 print(print_contacts(contacts))
+
+def print_contacts1(contacts):
+    for person in contacts:
+      print(f"{person} has a phone number of {contacts[person]}")
+
+print(print_contacts1(contacts))
