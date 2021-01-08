@@ -39,6 +39,6 @@ def letter_count(word):
             letters[letter] = 1
         else:
             letters[letter] += 1
-    return letters
+    print(letters)
 
-print(letter_count('banana'))
+letter_count('banana')
