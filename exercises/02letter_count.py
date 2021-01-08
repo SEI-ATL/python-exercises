@@ -6,7 +6,20 @@
 #
 # for letter in "alpha":
 #   print(letter)
-#
+
+def letter_count(str):
+    dictionary = {}
+    for letter in str :
+        if letter == ' ' : continue
+        if letter in dictionary: dictionary[letter] += 1
+        else: dictionary[letter] = 1
+    return dictionary
+
+print(letter_count('supercalifragilisticexpialidocious'))
+
+
+
+
 # Create a dictionary with `dd = {}`. Assign values with `dd["foo"] = 1`.
 # Check to see if a dictionary has a key using the `in` operator.
 #

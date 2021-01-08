@@ -10,3 +10,12 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+
+def multiply_by(num_list, n):
+    for i in range(len(num_list)):
+        num_list[i] = num_list[i] * n
+    return num_list
+
+
+numbers = [11,2,-3,9]
+print(multiply_by(numbers, 2))

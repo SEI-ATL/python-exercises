@@ -8,4 +8,14 @@
 # factorial(5)
 #
 # > 120
-#
+
+
+def factoral(n):
+    sum = 1	    
+    while n > 1 :	    
+        sum = sum * n	     
+        n -= 1	      
+    return sum	   
+
+
+print(factoral(8)) 	
