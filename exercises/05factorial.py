@@ -9,6 +9,7 @@
 #
 # > 120
 #
+# assume positive 
 
 from functools import reduce
 
