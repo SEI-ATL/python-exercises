@@ -10,3 +10,12 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+
+def multiply_by(num_list, multiple):
+    multiple_list = []
+    for num in num_list:
+        new_num = int(num) * int(multiple)
+        multiple_list.append(new_num)
+    print(multiple_list)
+
+multiply_by([1,2,3,4,5], 5)
