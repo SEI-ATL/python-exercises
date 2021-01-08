@@ -29,7 +29,9 @@ def print_contacts(dictionary):
         name = key
         number = dictionary[key]
         print(key + ' has a phone number of ' + number)
-
+newname = input('Enter a new name: ')
+newnumber = input('Enter a new number: ')
+contacts[newname] = newnumber
 print_contacts(contacts)
 
 # print(keylist)
