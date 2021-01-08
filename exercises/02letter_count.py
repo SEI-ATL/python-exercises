@@ -41,4 +41,8 @@ def letter_count(word):
             letters[letter] += 1
     print(letters)
 
+# JENNY'S VERSION
+# def letter_count(string):
+#     return {c: string.upper().count(c) for c in string.upper()}
+
 letter_count('banana')

@@ -11,7 +11,11 @@
 #
 
 def factorial(n):
-    if n == 0:
+    if type(n) != int:
+        raise TypeError('Input needs to be a whole number')
+    elif n < 0:
+        raise ValueError('Number needs to be a whole number')
+    elif n == 0:
         print(1)
     elif n <= 2:
         print(n)
@@ -22,3 +26,5 @@ def factorial(n):
         print(product)
 
 factorial(5)
+# factorial(-1)
+# factorial('one')
