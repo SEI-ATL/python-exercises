@@ -32,7 +32,6 @@
 #
 # > {'a': 3, 'b': 1, 'n': 2}
 
-
 def letter_count(word):
     letters = {}
     for letter in word:
