@@ -32,4 +32,22 @@
 #
 # > {'a': 3, 'b': 1, 'n': 3}
 
-dd = {}
+# Class Example
+def letter_count(string):
+    dd = {}
+    for letter in string:
+        # print(letter) # Prints each letter in the screen
+        if letter in dd:
+            dd[letter] += 1
+        else: 
+            dd[letter] = 1
+    
+    print(dd)
+
+
+letter_count("this is a string")
+
+#Jenny's Solution 
+# def letter_count(string):
+#     return {c: string.upper().count(c) for c in string.upper().replace(" ", '')}
+# print(letter_count('ABCABCabc   HELLO'))

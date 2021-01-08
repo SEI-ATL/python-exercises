@@ -11,11 +11,21 @@
 #
 # > [5, 10, 15]
 
-def multiply_by(numbers, multiplier):
-    new_numbers = []
-    for i in numbers:
-        new_numbers.append(i * multiplier)
+# def multiply_by(numbers, multiplier):
+#     new_numbers = []
+#     for i in numbers:
+#         new_numbers.append(i * multiplier)
 
-    return new_numbers
+#     return new_numbers
 
-print(multiply_by([2,4,6,8], 2))
+# print(multiply_by([2,4,6,8], 2))
+
+# Using map method
+def multiply(a, b):
+    return a * b
+
+def multiply_by2(arr, num):
+    return list(map(multiply, arr, [num]*len(arr)))
+
+
+print(multiply_by2([1, 2, 3], 2))
