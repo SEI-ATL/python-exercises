@@ -13,3 +13,9 @@
 # > Hello there
 # > Hello there
 # > Hello there
+
+def p_times(string, num):
+    return string * num
+
+
+print(p_times('hello\n', 5))
