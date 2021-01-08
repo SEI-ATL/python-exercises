@@ -16,3 +16,13 @@ class Deck:
         for i in range(n):
             cards.append(self.full_deck.pop(0))
         return cards
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person('Jackson', 34)
+
+print(p1.name)
+print(p1.age)
