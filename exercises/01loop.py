@@ -20,3 +20,19 @@ def p_times(statement, num):
 
 
 p_times('hey', 3)
+
+def p_times2(statement, num):
+    statement = statement + '\n'
+    print(statement * num)
+
+p_times2('hello', 4)
+
+def p_times3(statement, num):
+    i = 0
+    while i < num:
+        print(statement)
+        i += 1
+
+p_times3('why',5)
+
+    

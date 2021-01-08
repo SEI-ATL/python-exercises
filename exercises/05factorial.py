@@ -19,3 +19,15 @@ def factorial(num):
         print('please type in a positive number')
  
 print(factorial(4))
+
+
+def factorial2(num):
+    if num < 1:
+        raise ValueError('Number needs to be positive number') 
+    result = 1
+    
+    for i in range(result, (num + 1)):
+        result = result * i
+    return result
+
+print(factorial2(4))
