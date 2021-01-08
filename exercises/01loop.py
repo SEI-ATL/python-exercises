@@ -14,8 +14,21 @@
 # > Hello there
 # > Hello there
 
-def p_times(statement, num):
-    
-        return statement*num
 
-print(p_times('Hello There', 3))
+
+def p_times(statement, num):
+        statement = statement + '\n'
+        print(statement * num)
+        
+
+
+
+def p_times1(statement, num):
+        i = 0 
+        while i < num:
+                print(statement)
+                i += 1        
+
+def p_times2(statement, num):
+        for i in range(num):
+                print(statement)                

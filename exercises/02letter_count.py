@@ -31,3 +31,28 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 3}
+
+
+def letter_count(string):
+    dd = {}
+    for letter in string:
+        if letter in dd:
+            dd[letter] += 1
+        else:
+            dd[letter] = 1
+    print(dd)            
+
+
+        # iterating through a list
+numbers = [1,2,3]
+for num in numbers:
+    print(num)    
+# iterating through a dict
+student = {
+    "name": "John",
+    "class": "Computer Science"
+}
+for key in student:
+    print(key, student[key])
+
+
