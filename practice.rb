@@ -57,13 +57,24 @@ print_contacts(contacts)
 #     return newArr
 # end
 
-# nums = [1,2,3,4]
+def multiply_by(numArr, n)
+    numArr.map { |num| num*n } 
+end
+
+nums = [1,2,3,4]
+p multiply_by(nums, 5)
+p nums
+
 # puts multiply_by(nums, 5)
 # puts nums
 
 # def factorial_reduce(n)
-#     return Array(2..n).reduce(1) {|product, num| product*num}   
+#     return Array(2..n).reduce(1) { |product, num| product * num }   
 # end
+
+def factorial_reduce(n)
+    return Array(2..n).reduce(&:*) 
+end
 
 # def factorial_loop(n)
 #     factorial = 1
@@ -73,12 +84,19 @@ print_contacts(contacts)
 #     return factorial
 # end
 
-# puts factorial_reduce(5)
-# puts factorial_loop(5)
+def factorial_loop(n)
+    factorial = 1
+    n += 1
+    n.times { |i| factorial = factorial * i unless i == 0 }
+    return factorial
+end
+
+puts factorial_reduce(5)
+puts factorial_loop(5)
 
 # # Class example in Ruby
 
-# class Soup #camel case classnames
+# class Soup #pascal case ClassNames
 #     def initialize(name, temp, ingredients)
 #         @name = name
 #         @temperature = temp # hot or cold
@@ -94,13 +112,38 @@ print_contacts(contacts)
 #         ind = rand(opinions.length())
 #         if @temperature == 'Cold' then return opinions[ind] end
 #     end
-
 # end
 
-#  borscht = Soup.new("Borscht", "Cold", ["Beets", "Sour Cream", "Dill", "Potatoes (optional)"])
+class Soup 
+    TEMP_VALUES = ["cold", "hot"] # for validation purposes
+    OPINIONS = ["ok...", "no.", "Gross", "But why though"]
 
-#  puts borscht.get_shopping_list
-#  puts borscht.get_opinion
+    def initialize(args)
+        @name = args[:name]
+        @ingredients = args[:ingredients]
+        unless TEMP_VALUES.include? args[:temp].downcase
+            raise "Invalid Temperature, must be #{TEMP_VALUES}" 
+        end
+        @temperature = args[:temp].downcase
+    end
+
+    def get_shopping_list
+        return "- " + @ingredients.join("\n- ")
+    end
+
+    def get_opinion
+        ind = rand(OPINIONS.length())
+        if @temperature == 'cold' then return OPINIONS[ind] end
+    end
+end 
+    
+
+borscht = Soup.new({name: "Borscht", temp: "Cold", ingredients: ["Beets", "Sour Cream", "Dill", "Potatoes (optional)"]})
+
+puts borscht.get_shopping_list
+puts borscht.get_opinion
+
+
 
 
 # Feedback from Pete Macaluso: 
@@ -159,6 +202,7 @@ print_contacts(contacts)
 # 'Lenny': '444-444-4444',
 # 'Daniel': '777-777-7777' }
 # print_contacts(contacts)
+
 # def multiply_by(numArr, n) #non mutating
 #     newArr = []
 #     numArr.each{ |num| newArr.push(num*n)}
@@ -181,6 +225,7 @@ print_contacts(contacts)
 # # sometimes you just want p, which does not cast as string before printing
 # puts multiply_by(nums, 5)
 # puts nums
+
 # def factorial_reduce(n)
 #     # ruby linters will yell at this line over some spacings
 #     return Array(2..n).reduce(1) {|product, num| product*num}
